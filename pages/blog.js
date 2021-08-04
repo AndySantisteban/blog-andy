@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Image from 'next/image'
-import Imagen_mi from '../public/pp.jpeg'
-export default function Home() {
+import { getAllFilesMetadata } from '../lib/mdx'
+export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -43,18 +42,26 @@ export default function Home() {
           </div>
         </nav>
         <div className={styles.main}>
-          <Image
-            src={Imagen_mi}
-            alt="foto_andysantisteban"
-            width="200px"
-            height="200px"
-            className={styles.imagen_mi}
-          />
-          <Link href="/blog">
-            <a className={styles.link_blog}>ir a blog</a>
-          </Link>
+          <h1 className={styles.title}>Blog</h1>
+          <div className={styles.grid}>
+            {posts.map((post) => (
+              <Link key={post.slug} href={`/${post.slug}`}>
+                <a className={styles.card}>
+                  <h2>{post.title} &rarr;</h2>
+                  <p>{post.date}</p>
+                </a>
+              </Link>
+            ))}
+          </div>
         </div>
       </main>
     </div>
   )
+}
+export async function getStaticProps() {
+  const posts = await getAllFilesMetadata({})
+  console.log(posts)
+  return {
+    props: { posts },
+  }
 }
