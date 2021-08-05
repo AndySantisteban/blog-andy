@@ -24,19 +24,14 @@ export default function Home({ posts }) {
           <div>
             <ul>
               <li>
-                <a href="https://twitter.com/SantistebanAndy">
-                  <img src="https://img.icons8.com/material-rounded/24/ffffff/facebook.png" />
-                </a>
+                <Link href="https://twitter.com/SantistebanAndy">
+                  <a>Twitter</a>
+                </Link>
               </li>
               <li>
-                <a href="https://twitter.com/SantistebanAndy">
-                  <img src="https://img.icons8.com/ios-glyphs/24/ffffff/twitter--v1.png" />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/AndySantisteban">
-                  <img src="https://img.icons8.com/material-sharp/24/ffffff/github.png" />
-                </a>
+                <Link href="https://github.com/AndySantisteban">
+                  <a>Github</a>
+                </Link>
               </li>
             </ul>
           </div>

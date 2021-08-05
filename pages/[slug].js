@@ -29,13 +29,14 @@ export default function Post({ source, frontmatter }) {
         <div>
           <ul>
             <li>
-              <a href="https://twitter.com/SantistebanAndy">Facebook</a>
+              <Link href="https://twitter.com/SantistebanAndy">
+                <a>Twitter</a>
+              </Link>
             </li>
             <li>
-              <a href="https://twitter.com/SantistebanAndy">Twitter</a>
-            </li>
-            <li>
-              <a href="https://github.com/AndySantisteban">Github</a>
+              <Link href="https://github.com/AndySantisteban">
+                <a>Github</a>
+              </Link>
             </li>
           </ul>
         </div>

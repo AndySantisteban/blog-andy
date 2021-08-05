@@ -25,33 +25,32 @@ export default function Home() {
           <div>
             <ul>
               <li>
-                <a href="https://twitter.com/SantistebanAndy">
-                  <img src="https://img.icons8.com/material-rounded/24/ffffff/facebook.png" />
-                </a>
+                <Link href="https://twitter.com/SantistebanAndy">
+                  <a>Twitter</a>
+                </Link>
               </li>
               <li>
-                <a href="https://twitter.com/SantistebanAndy">
-                  <img src="https://img.icons8.com/ios-glyphs/24/ffffff/twitter--v1.png" />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/AndySantisteban">
-                  <img src="https://img.icons8.com/material-sharp/24/ffffff/github.png" />
-                </a>
+                <Link href="https://github.com/AndySantisteban">
+                  <a>Github</a>
+                </Link>
               </li>
             </ul>
           </div>
         </nav>
         <div className={styles.main}>
-          <Image
-            src={Imagen_mi}
-            alt="foto_andysantisteban"
-            width="200px"
-            height="200px"
-            className={styles.imagen_mi}
-          />
+          <Link href="https://www.andysantisteban.soy.pe">
+            <a>
+              <Image
+                src={Imagen_mi}
+                alt="foto_andysantisteban"
+                width="200px"
+                height="200px"
+                className={styles.imagen_mi}
+              />
+            </a>
+          </Link>
           <Link href="/blog">
-            <a className={styles.link_blog}>ir a blog</a>
+            <a className={styles.link_blog}>Ir a blog</a>
           </Link>
         </div>
       </main>
