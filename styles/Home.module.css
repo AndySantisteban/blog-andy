@@ -106,6 +106,8 @@
 }
 .contenido {
   margin: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 .imagen_mi {
   border-radius: 50%;

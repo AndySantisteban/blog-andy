@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Post({ source, frontmatter }) {
   console.log(source)
   return (
-    <div className={styles.container}>
+    <div>
       <nav className={styles.nav}>
         <div>
           <ul>

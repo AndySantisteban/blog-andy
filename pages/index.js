@@ -34,6 +34,11 @@ export default function Home() {
                   <a>Github</a>
                 </Link>
               </li>
+              <li>
+                <Link href="https://andysantisteban.soy.pe">
+                  <a>Cv</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
