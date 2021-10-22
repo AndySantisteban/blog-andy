@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ardy Yosue Sandy Esteban Blog</title>
+        <title>Andy Santisteban Blog</title>
         <meta name="description" content="Blog Andy Santisteban " />
         <meta name="description" content="Desarrollador Web " />
         <link rel="icon" href="/favicon.ico" />
