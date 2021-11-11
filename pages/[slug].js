@@ -3,10 +3,16 @@ import { MDXRemote } from 'next-mdx-remote'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-export default function Post({ source, frontmatter }) {
+export default function Post({ source, frontMatter }) {
   console.log(source)
   return (
     <div>
+     <head>
+       <link
+           href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+           rel="stylesheet"
+       />
+     </head>
       <nav className={styles.nav}>
         <div>
           <ul>
@@ -15,19 +21,11 @@ export default function Post({ source, frontmatter }) {
                 <a>Atrás</a>
               </Link>
             </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
             <li>
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
             <li>
               <Link href="https://twitter.com/SantistebanAndy">
                 <a>Twitter</a>
@@ -40,8 +38,11 @@ export default function Post({ source, frontmatter }) {
             </li>
           </ul>
         </div>
+        <div>
+        </div>
+
       </nav>
-      <div className={styles.contenido}>
+      <div className={styles.container__blog}>
         <MDXRemote {...source} />
       </div>
     </div>
