@@ -20,7 +20,7 @@ export default function Post({ source, frontMatter }) {
           <ul>
             <li>
               <Link href="/blog">
-                <a className={styles.link__navbar}><img src="https://img.icons8.com/windows/24/ffffff/back.png" alt={"..."}/></a>
+                <a className={styles.link__navbar}><Image src="https://img.icons8.com/windows/24/ffffff/back.png" alt={"..."}/></a>
               </Link>
             </li>
             <li>

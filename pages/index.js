@@ -48,16 +48,11 @@ export default function Home() {
                 {/*agregar descripcion sobre mi*/}
                <span> Este blog fue realizado con : Next.js y MDX</span>
                 <div className={styles.social}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://img.icons8.com/metro/30/ffffff/facebook.png" alt={"..."} className={styles.social__icon}/>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/whatsapp.png" alt={"..."} className={styles.social__icon}/>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" alt={"..."} className={styles.social__icon}/>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/portfolio.png" alt={"..."} className={styles.social__icon}/>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"  alt={"..."} className={styles.social__icon}/>
+                  <Image src="https://img.icons8.com/metro/30/ffffff/facebook.png" alt={"..."} className={styles.social__icon}/>
+                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/whatsapp.png" alt={"..."} className={styles.social__icon}/>
+                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" alt={"..."} className={styles.social__icon}/>
+                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/portfolio.png" alt={"..."} className={styles.social__icon}/>
+                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"  alt={"..."} className={styles.social__icon}/>
                 </div>
 
              </div>
