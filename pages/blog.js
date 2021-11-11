@@ -17,26 +17,18 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <nav>
+        <nav >
             <ul>
+
               <li>
                 <Link href="/">
-                  <a>Andy Santisteban</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="https://twitter.com/SantistebanAndy">
-                  <a>Twitter</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="https://github.com/AndySantisteban">
-                  <a>Github</a>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <a className={styles.link__navbar}><img src="https://img.icons8.com/windows/26/ffffff/back.png" alt={"..."}/>Andy Santisteban</a>
                 </Link>
               </li>
             </ul>
         </nav>
-        <div >
+        <div  className={'headline'}>
           <h1  align={'center'}>Blog</h1>
             <div className={styles.container}>
             {posts.map((post) => (
@@ -52,7 +44,6 @@ export default function Home({ posts }) {
                     </a>
                   </Link>
                 </div>
-
             ))}
             </div>
         </div>

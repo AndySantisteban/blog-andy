@@ -2,6 +2,8 @@ import { getFileBySlug, getFiles } from '../lib/mdx'
 import { MDXRemote } from 'next-mdx-remote'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
+import Imagen_mi from '../public/pp.jpeg'
 
 export default function Post({ source, frontMatter }) {
   console.log(source)
@@ -18,32 +20,27 @@ export default function Post({ source, frontMatter }) {
           <ul>
             <li>
               <Link href="/blog">
-                <a>Atrás</a>
+                <a className={styles.link__navbar}><img src="https://img.icons8.com/windows/24/ffffff/back.png" alt={"..."}/></a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://twitter.com/SantistebanAndy">
-                <a>Twitter</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://github.com/AndySantisteban">
-                <a>Github</a>
-              </Link>
             </li>
           </ul>
         </div>
-        <div>
-        </div>
-
       </nav>
       <div className={styles.container__blog}>
-        <MDXRemote {...source} />
+        <div>
+          <Image
+              src={Imagen_mi}
+              alt="foto_andysantisteban"
+              width={400}
+              height={400}
+              className={styles.imagen_blog}
+          />
+        </div>
+        <div className={styles.container__blog__mdx}>
+          <MDXRemote {...source} />
+        </div>
       </div>
     </div>
   )

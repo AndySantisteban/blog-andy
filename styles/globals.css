@@ -2,12 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  color: black;
+  color: white;
   font-family: "Inter", sans-serif;
   place-items: center;
   grid-template-rows: auto auto auto   ;
   height: 100vh;
-
+  background: #374151 url("../public/bg.svg");
 }
 img {
   max-width: 100%;
@@ -17,6 +17,7 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+
 }
 
 * {
@@ -24,6 +25,7 @@ a {
 }
 ul {
   display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
   width: 100%;
@@ -31,6 +33,7 @@ ul {
 li {
   margin: 0 0.5rem;
   list-style: none;
+
 }
 li img {
   flex: 1;
@@ -42,4 +45,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  background:rgba(11 19 29 /0.5);
+  backdrop-filter: blur(6px);
 }
