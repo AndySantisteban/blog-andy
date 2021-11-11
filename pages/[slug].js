@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import Imagen_mi from '../public/pp.jpeg'
+import BackIcon from '../public/back.png'
 
 export default function Post({ source, frontMatter }) {
   console.log(source)
@@ -20,7 +21,7 @@ export default function Post({ source, frontMatter }) {
           <ul>
             <li>
               <Link href="/blog">
-                <a className={styles.link__navbar}><Image src="https://img.icons8.com/windows/24/ffffff/back.png" alt={"..."}/></a>
+                <a className={styles.link__navbar}><Image src={BackIcon} alt={"..."}/></a>
               </Link>
             </li>
             <li>

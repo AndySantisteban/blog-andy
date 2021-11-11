@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { getAllFilesMetadata } from '../lib/mdx'
+import Image from 'next/image'
+import BackIcon from '../public/back.png'
 
 export default function Home({ posts }) {
   return (
@@ -23,7 +25,7 @@ export default function Home({ posts }) {
               <li>
                 <Link href="/">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <a className={styles.link__navbar}><img src="https://img.icons8.com/windows/26/ffffff/back.png" alt={"..."}/>Andy Santisteban</a>
+                  <a className={styles.link__navbar}><Image src={BackIcon} alt={"..."} width={30} height={30}/>Andy Santisteban</a>
                 </Link>
               </li>
             </ul>

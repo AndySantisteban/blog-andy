@@ -3,7 +3,11 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import Imagen_mi from '../public/pp.jpeg'
-
+import FacebookIcon from '../public/facebook.png'
+import WhatsappIcon from '../public/whatsapp.png'
+import Portfolio from '../public/portfolio.png'
+import TwitterIcon from '../public/twitter.png'
+import GithubIcon from '../public/github.png'
 export default function Home() {
   return (
     <div>
@@ -30,7 +34,7 @@ export default function Home() {
        <div className={styles.containerHome}>
          <div  className={styles.home_banner}>
            <Link href="https://www.andysantisteban.com">
-             <a>
+             <a className={styles.imagen_mi}>
                <Image
                    src={Imagen_mi}
                    alt="foto_andysantisteban"
@@ -48,11 +52,31 @@ export default function Home() {
                 {/*agregar descripcion sobre mi*/}
                <span> Este blog fue realizado con : Next.js y MDX</span>
                 <div className={styles.social}>
-                  <Image src="https://img.icons8.com/metro/30/ffffff/facebook.png" alt={"..."} className={styles.social__icon}/>
-                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/whatsapp.png" alt={"..."} className={styles.social__icon}/>
-                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" alt={"..."} className={styles.social__icon}/>
-                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/portfolio.png" alt={"..."} className={styles.social__icon}/>
-                  <Image src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"  alt={"..."} className={styles.social__icon}/>
+                  <Link href={""}>
+                    <a className={styles.social__icon}>
+                      <Image src={FacebookIcon} alt={"..."} className={styles.social__icon} width={30} height={30}/>
+                    </a>
+                  </Link>
+                  <Link href={""}>
+                    <a className={styles.social__icon}>
+                      <Image src={WhatsappIcon} alt={"..."} className={styles.social__icon} width={30} height={30}/>
+                    </a>
+                  </Link>
+                  <Link href={""}>
+                    <a className={styles.social__icon}>
+                      <Image src={TwitterIcon} alt={"..."} className={styles.social__icon} width={30} height={30}/>
+                    </a>
+                  </Link>
+                  <Link href={""}>
+                    <a className={styles.social__icon}>
+                      <Image src={Portfolio} alt={"..."} className={styles.social__icon} width={30} height={30}/>
+                    </a>
+                  </Link>
+                  <Link href={""}>
+                    <a className={styles.social__icon}>
+                      <Image src={GithubIcon}  alt={"..."}  width={30} height={30}/>
+                    </a>
+                  </Link>
                 </div>
 
              </div>
