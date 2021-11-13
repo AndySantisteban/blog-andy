@@ -15,10 +15,6 @@ export default function Home() {
         <title>Andy Santisteban Blog</title>
         <meta name="description" content="Blog Andy Santisteban " />
         <meta name="description" content="Desarrollador Web " />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
-            rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -52,28 +48,28 @@ export default function Home() {
                 {/*agregar descripcion sobre mi*/}
                <span> Este blog fue realizado con : Next.js y MDX</span>
                 <div className={styles.social}>
-                  <Link href={""}>
-                    <a className={styles.social__icon}>
+                  <Link href={"https://www.facebook.com/AndySantisteban1607/"}>
+                    <a className={styles.social__icon} target={"_blank"}>
                       <Image src={FacebookIcon} alt={"..."} className={styles.social__icon} width={30} height={30}/>
                     </a>
                   </Link>
-                  <Link href={""}>
-                    <a className={styles.social__icon}>
+                  <Link href={"https://api.whatsapp.com/send?phone=+51969518378&text=Hola!%20vengo%20de%20tu%20Blog"} >
+                    <a className={styles.social__icon} target={"_blank"}>
                       <Image src={WhatsappIcon} alt={"..."} className={styles.social__icon} width={30} height={30}/>
                     </a>
                   </Link>
-                  <Link href={""}>
-                    <a className={styles.social__icon}>
+                  <Link href={"https://twitter.com/SantistebanAndy"}>
+                    <a className={styles.social__icon} target={"_blank"}>
                       <Image src={TwitterIcon} alt={"..."} className={styles.social__icon} width={30} height={30}/>
                     </a>
                   </Link>
-                  <Link href={""}>
-                    <a className={styles.social__icon}>
+                  <Link href={"https://andysantisteban.com/"}>
+                    <a className={styles.social__icon} target={"_blank"}>
                       <Image src={Portfolio} alt={"..."} className={styles.social__icon} width={30} height={30}/>
                     </a>
                   </Link>
-                  <Link href={""}>
-                    <a className={styles.social__icon}>
+                  <Link href={"https://github.com/AndySantisteban"}>
+                    <a className={styles.social__icon} target={"_blank"}>
                       <Image src={GithubIcon}  alt={"..."}  width={30} height={30}/>
                     </a>
                   </Link>
